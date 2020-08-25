@@ -1,0 +1,104 @@
+/* index.css */
+
+#container{
+  width: 360px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(img/lotto-864035_640.jpg);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  border: 1px black solid;
+}
+
+.style-numbers{
+  width:350px;
+  margin: 0;
+  display: flex; /*빈공간 최소화! */
+  flex-wrap: wrap; /*공간이 넘치면 행 이동! */
+}
+
+.style-numbers > div{
+  width: 50px;
+  height: 36px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+
+.ing{
+  /*공간은 차지하되 보이진 않는다.*/
+  visibility: hidden;
+}
+
+.visible{
+  visibility: visible;
+}
+
+.selected > p{
+  color: white;
+  background-color: yellow;
+}
+
+.reset{
+  display:none;
+  
+}
+
+header{
+  border: 1px white solid;
+  color: goldenrod;
+  font-weight: bolder;
+  text-shadow: -1px 0 gold, 0 1px gold, 1px 0 gold, 0 -1px gold;
+}
+
+.btn{
+  margin-top: 25px;
+  background-color: red;
+  color: black;
+  font-weight: bolder;
+  border: 2px black solid; 
+}
+
+.cNumber{
+  float: left;
+  display: inline-block;
+  margin: 15px;
+  border-radius: 50% 50%;
+  border: 1px black solid;
+  background-color: red;
+  color: gold;
+}
+
+.cNumbers{
+  display: inline-block;
+  border: 1px gold solid;
+  border-radius: 10px 10px;
+  display: inline-flex;
+  margin-top: 10px;
+  background-color: beige;
+}
+
+.number{
+  font-size: 18px;
+  font-weight: bolder;
+  border: 2px black solid;
+  background-color: lightgrey;
+  color: azure;
+  text-shadow: -1px 0 gold, 0 1px gold, 1px 0 gold, 0 -1px gold;
+}
+
+.reset{
+  margin-top: 15px;
+  background-color: green;
+  color: black;
+  font-weight: bolder;
+  border: 2px black solid;
+}
+
+footer{
+  background-color: lightgrey;
+  color: darkgoldenrod;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
